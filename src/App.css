@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: Inter, serif;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  margin-bottom: 50px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: #F55A5A;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar--img {
+  height: 2.5rem;
+  margin: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar--title {
+  font-weight: 500;
+  letter-spacing: -0.07rem;
+}
+
+
+.record {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.record--image {
+  width: 210px;
+  height: 275px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.record--info {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.record--sub-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.record--location-icon {
+  height: 1rem;
+}
+
+.record--country {
+  margin: 0px 10px;
+  padding-right: 8px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: +0.2rem;
+}
+
+.record--maps {
+  color: gray;
+}
+
+.record--maps:hover {
+  color: darkgray;
+}
+
+.record--location {
+  margin: 0px;
+  margin-top: 8px;
+  font-size: 2.75rem;
+}
+
+.record--date {
+  margin: 25px 0px 15px 0px;
+  font-weight: bold;
+}
+
+.record--description {
+  margin: 0px;
+  font-size: 1.1rem;
+  width: 55vw;
 }
