@@ -10,12 +10,14 @@ function Record(props) {
         <span className="record--sub-header">
           <img className="record--location-icon" src={LocationIcon} />
           <h2 className="record--country">{data.country}</h2>
-          <a className="record--maps" href="#">
+          <a className="record--maps" href={data.googleMapsLink}>
             View on Google Maps
           </a>
         </span>
         <h1 className="record--location">{data.location}</h1>
-        <h3 className="record--date">{data.date}</h3>
+        <h3 className="record--date">
+          {data.startDate} - {data.endDate}
+        </h3>
         <p className="record--description">{data.description}</p>
       </div>
     </div>
